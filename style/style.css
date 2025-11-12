@@ -719,8 +719,10 @@ main {
 }
 
 .contact-icon {
-  display: inline-grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   justify-self: center;
   align-self: center;
   width: clamp(56px, 8vw, 76px);
@@ -735,6 +737,10 @@ main {
   width: clamp(32px, 4.8vw, 42px);
   height: clamp(32px, 4.8vw, 42px);
   fill: #f6c74f;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .map-card {
