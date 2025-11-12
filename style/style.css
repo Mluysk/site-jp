@@ -524,7 +524,7 @@ main {
 
 .footer-logo {
   width: 64px;
-  filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.28));
+  filter: brightness(0) invert(1) drop-shadow(0 10px 16px rgba(0, 0, 0, 0.28));
 }
 
 .footer-credit {
