@@ -582,7 +582,7 @@ main {
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 360px) minmax(0, 280px);
+  grid-template-columns: minmax(0, 360px) minmax(0, 340px);
   gap: clamp(28px, 5vw, 42px);
   align-items: start;
   justify-content: center;
@@ -666,7 +666,7 @@ main {
 
   .map-card {
     width: 100%;
-    max-width: 280px;
+    max-width: 340px;
   }
 }
 
