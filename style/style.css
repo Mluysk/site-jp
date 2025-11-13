@@ -1080,15 +1080,16 @@ main {
   }
 
   .hero-slider {
-    width: 150%;
-    margin-left: -25%;
-    margin-right: -25%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 0;
   }
 
   .hero-slider__track {
-    min-height: clamp(260px, 95vw, 460px);
-    aspect-ratio: 6 / 5;
+    min-height: 0;
+    height: 0;
+    padding-top: 48%;
   }
 
   .hero-slide {
