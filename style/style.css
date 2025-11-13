@@ -1087,7 +1087,7 @@ main {
 
   .hero-slider__track {
     min-height: 0;
-    aspect-ratio: 5 / 2;
+    aspect-ratio: 2 / 1;
   }
 
   .hero-slide {
