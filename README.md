@@ -23,6 +23,10 @@ Site institucional estático da JP Fábrica de Salgados. O projeto inclui as pá
 
 Todos os botões de pedido direcionam para o WhatsApp configurado no arquivo `scripts/main.js`.
 
+## Controle de cache
+
+Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento e referencia os arquivos `style/style.css` e `scripts/main.js` com o sufixo de versão `?v=20240520`. Ao atualizar os assets, incremente esse valor (por exemplo, `?v=20240521`) em todas as páginas HTML para forçar um novo download dos arquivos.
+
 ## Dimensões do carrossel principal
 
 O carrossel de destaque da home utiliza altura controlada pela variável CSS `--hero-slide-height`, definida como `clamp(320px, 45vw, 480px)`. Em telas largas isso resulta em slides com aproximadamente 480 px de altura e cerca de 1 200 px de largura útil, pois o componente se estende um pouco além do contêiner de 1 140 px.
