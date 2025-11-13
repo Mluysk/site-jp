@@ -5,7 +5,9 @@ const modal = document.querySelector('[data-modal]');
 const modalText = modal?.querySelector('[data-modal-text]');
 const modalWhats = modal?.querySelector('[data-modal-whatsapp]');
 const scrollTopButton = document.querySelector('[data-scroll-top]');
+const heroSlider = document.querySelector('[data-hero-slider]');
 const SCROLL_TOP_THRESHOLD = 320;
+const HERO_SLIDE_INTERVAL = 5000;
 
 function openWhats(message = DEFAULT_MESSAGE) {
   const text = encodeURIComponent(message);
@@ -114,12 +116,118 @@ function setupScrollTopButton() {
   toggleVisibility();
 }
 
+function initHeroSlider() {
+  if (!heroSlider) return;
+
+  const slides = Array.from(heroSlider.querySelectorAll('[data-hero-slide]'));
+  if (!slides.length) return;
+
+  const prevButton = heroSlider.querySelector('[data-hero-prev]');
+  const nextButton = heroSlider.querySelector('[data-hero-next]');
+  const dotsContainer = heroSlider.querySelector('[data-hero-dots]');
+  let currentIndex = slides.findIndex((slide) => slide.classList.contains('is-active'));
+  let intervalId = null;
+
+  if (currentIndex < 0) {
+    currentIndex = 0;
+    slides[0].classList.add('is-active');
+  }
+
+  slides.forEach((slide, index) => {
+    slide.setAttribute('aria-hidden', index === currentIndex ? 'false' : 'true');
+  });
+
+  const dots = [];
+
+  if (dotsContainer) {
+    dotsContainer.innerHTML = '';
+    slides.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'hero-slider__dot';
+      dot.setAttribute('aria-label', `Ir para o slide ${index + 1}`);
+      dot.addEventListener('click', () => {
+        stopAutoAdvance();
+        goToSlide(index);
+        startAutoAdvance();
+      });
+      dotsContainer.appendChild(dot);
+      dots.push(dot);
+    });
+  }
+
+  function updateDots(index) {
+    if (!dots.length) return;
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle('is-active', dotIndex === index);
+      dot.setAttribute('aria-current', dotIndex === index ? 'true' : 'false');
+    });
+  }
+
+  function goToSlide(index) {
+    if (!slides.length) return;
+    const targetIndex = (index + slides.length) % slides.length;
+    slides[currentIndex]?.classList.remove('is-active');
+    slides[currentIndex]?.setAttribute('aria-hidden', 'true');
+    slides[targetIndex]?.classList.add('is-active');
+    slides[targetIndex]?.setAttribute('aria-hidden', 'false');
+    currentIndex = targetIndex;
+    updateDots(currentIndex);
+  }
+
+  function showNextSlide() {
+    goToSlide(currentIndex + 1);
+  }
+
+  function showPreviousSlide() {
+    goToSlide(currentIndex - 1);
+  }
+
+  function stopAutoAdvance() {
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+  }
+
+  function startAutoAdvance() {
+    if (slides.length <= 1) return;
+    stopAutoAdvance();
+    intervalId = setInterval(showNextSlide, HERO_SLIDE_INTERVAL);
+  }
+
+  prevButton?.addEventListener('click', () => {
+    stopAutoAdvance();
+    showPreviousSlide();
+    startAutoAdvance();
+  });
+
+  nextButton?.addEventListener('click', () => {
+    stopAutoAdvance();
+    showNextSlide();
+    startAutoAdvance();
+  });
+
+  heroSlider.addEventListener('mouseenter', stopAutoAdvance);
+  heroSlider.addEventListener('mouseleave', startAutoAdvance);
+  heroSlider.addEventListener('focusin', stopAutoAdvance);
+  heroSlider.addEventListener('focusout', (event) => {
+    if (!heroSlider.contains(event.relatedTarget)) {
+      startAutoAdvance();
+    }
+  });
+
+  updateDots(currentIndex);
+  startAutoAdvance();
+}
+
 function init() {
   bindWhatsButtons();
   bindPedidoButtons();
   bindModalControls();
   bindContactForm();
   setupScrollTopButton();
+  initHeroSlider();
 }
 
 document.addEventListener('DOMContentLoaded', init);

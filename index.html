@@ -36,9 +36,34 @@
   <main>
     <div class="container">
       <!-- Hero -->
-      <section class="hero">
-        <div class="hero-card">
-          <img src="img/FLAYER-1.png" alt="Prato com salgados diversos" class="hero-media">
+      <section class="hero hero--split">
+        <div class="hero-slider" data-hero-slider>
+          <div class="hero-slider__track" data-hero-track aria-live="polite">
+            <figure class="hero-slide is-active" data-hero-slide>
+              <img src="img/FLAYER-1.png" alt="Bandeja de coxinhas e molho especial">
+            </figure>
+            <figure class="hero-slide" data-hero-slide>
+              <img src="img/esfihas.png" alt="Seleção de esfihas artesanais" loading="lazy">
+            </figure>
+            <figure class="hero-slide" data-hero-slide>
+              <img src="img/salgados.png" alt="Mesa com salgadinhos variados" loading="lazy">
+            </figure>
+            <figure class="hero-slide" data-hero-slide>
+              <img src="img/mini coxinha.jpg" alt="Mini coxinhas douradas" loading="lazy">
+            </figure>
+            <figure class="hero-slide" data-hero-slide>
+              <img src="img/pão de queijo.png" alt="Pães de queijo recém-assados" loading="lazy">
+            </figure>
+          </div>
+          <button class="hero-slider__control hero-slider__control--prev" type="button" data-hero-prev aria-label="Slide anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15.41 7.41-1.41-1.41-6 6 6 6 1.41-1.41-4.58-4.59z"/></svg>
+          </button>
+          <button class="hero-slider__control hero-slider__control--next" type="button" data-hero-next aria-label="Próximo slide">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8.59 16.59 1.41 1.41 6-6-6-6-1.41 1.41 4.58 4.59z"/></svg>
+          </button>
+          <div class="hero-slider__dots" data-hero-dots aria-label="Indicadores do carrossel"></div>
+        </div>
+        <div class="hero-card hero-card--content">
           <div class="hero-content">
             <h2>O melhor dos salgados, direto para você</h2>
             <p>Encomendas para festas, empresas e eventos. Feitos com ingredientes selecionados e muito carinho.</p>
