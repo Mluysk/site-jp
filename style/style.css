@@ -288,8 +288,6 @@ main {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.2);
-  transform-origin: center;
 }
 
 .hero-slider__control {
@@ -1084,8 +1082,8 @@ main {
   }
 
   .hero-slider {
-    width: 100%;
-    margin: 0;
+    width: min(90vw, 100%);
+    margin-inline: auto;
     padding: clamp(3px, 1vw, 6px);
     min-height: 0;
     --hero-mobile-aspect: 65%;
