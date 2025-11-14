@@ -25,7 +25,7 @@ Todos os botões de pedido direcionam para o WhatsApp configurado no arquivo `sc
 
 ## Controle de cache
 
-Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento e referencia os arquivos `style/style.css` e `scripts/main.js` com o sufixo de versão `?v=20240524c`. Ao atualizar os assets, incremente esse valor (por exemplo, `?v=20240525`) em todas as páginas HTML para forçar um novo download dos arquivos.
+Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento e referencia os arquivos `style/style.css` e `scripts/main.js` com o sufixo de versão `?v=20240524d`. Ao atualizar os assets, incremente esse valor (por exemplo, `?v=20240525`) em todas as páginas HTML para forçar um novo download dos arquivos.
 
 ## Dimensões do carrossel principal
 
