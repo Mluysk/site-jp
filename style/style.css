@@ -1122,6 +1122,8 @@ main {
     object-position: center;
     background: none;
     margin-inline: auto;
+    transform: scale(1.3);
+    transform-origin: center;
   }
 
   .hero-slider__control {
