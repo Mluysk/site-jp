@@ -274,11 +274,13 @@ main {
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s ease;
   border-radius: inherit;
+  pointer-events: none;
 }
 
 .hero-slide.is-active {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .hero-slide img {
@@ -1084,32 +1086,35 @@ main {
     margin: 0;
     padding: clamp(3px, 1vw, 6px);
     min-height: 0;
+    --hero-mobile-aspect: 65%;
   }
 
   .hero-slider__track {
     min-height: 0;
-    height: auto;
-    padding-top: 0;
+    height: 0;
+    padding-top: var(--hero-mobile-aspect);
+    position: relative;
   }
 
   .hero-slide {
-    position: relative;
-    inset: auto;
+    position: absolute;
+    inset: 0;
     opacity: 0;
     visibility: hidden;
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: opacity 0.35s ease;
   }
 
   .hero-slide.is-active {
-    display: block;
     opacity: 1;
     visibility: visible;
   }
 
   .hero-slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
     background: none;
   }
