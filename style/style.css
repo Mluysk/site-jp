@@ -1118,7 +1118,7 @@ main {
     max-width: 98%;
     height: 98%;
     max-height: 98%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     background: none;
     margin-inline: auto;
