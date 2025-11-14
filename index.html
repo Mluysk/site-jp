@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>JP Fábrica de Salgados</title>
+  <meta name="description" content="JP Fábrica de Salgados - salgados frescos e deliciosos para eventos e encomendas." />
+    <link rel="stylesheet" href="style/style.css?v=20240524s">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="img/logo.png" alt="JP Fábrica de Salgados" id="logo">
+        <div>
+          <h1>JP Fábrica de Salgados</h1>
+          <small>Tradição e sabor desde 2020</small>
+        </div>
+      </div>
+
+      <nav aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="cta">
+        <button class="btn" data-pedido data-message="Olá! Gostaria de fazer uma encomenda.">Fazer pedido</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Hero -->
+      <section class="hero hero--split">
+        <div class="hero-slider" data-hero-slider>
+          <div class="hero-slider__track" data-hero-track aria-live="polite">
+            <figure class="hero-slide is-active" data-hero-slide>
+              <img src="img/slide1.png" alt="Bandeja de coxinhas e molho especial">
+            </figure>
+            <figure class="hero-slide" data-hero-slide>
+              <img src="img/slide2.png" alt="Seleção de esfihas artesanais" loading="lazy">
+            </figure>
+            <figure class="hero-slide" data-hero-slide>
+              <img src="img/slide3.png" alt="Mesa com salgadinhos variados" loading="lazy">
+            </figure>
+            <figure class="hero-slide" data-hero-slide>
+              <img src="img/slide4.png" alt="Mini coxinhas douradas" loading="lazy">
+            </figure>
+            <figure class="hero-slide" data-hero-slide>
+              <img src="img/slide5.png" alt="Pães de queijo recém-assados" loading="lazy">
+            </figure>
+          </div>
+          <button class="hero-slider__control hero-slider__control--prev" type="button" data-hero-prev aria-label="Slide anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15.41 7.41-1.41-1.41-6 6 6 6 1.41-1.41-4.58-4.59z"/></svg>
+          </button>
+          <button class="hero-slider__control hero-slider__control--next" type="button" data-hero-next aria-label="Próximo slide">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8.59 16.59 1.41 1.41 6-6-6-6-1.41 1.41 4.58 4.59z"/></svg>
+          </button>
+          <div class="hero-slider__dots" data-hero-dots aria-label="Indicadores do carrossel"></div>
+        </div>
+        <div class="hero-card hero-card--content">
+          <div class="hero-content">
+            <h2>O melhor dos salgados, direto para você</h2>
+            <p>Encomendas para festas, empresas e eventos. Feitos com ingredientes selecionados e muito carinho.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#produtos">Ver produtos</a>
+              <button class="btn btn--whatsapp" data-whatsapp data-message="Olá! Gostaria de fazer uma encomenda.">WhatsApp</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Produtos -->
+      <section id="produtos" class="section">
+        <div class="section-header">
+          <h2>Nossos produtos</h2>
+          <p>Variedade de salgados fresquinhos para todo tipo de evento.</p>
+        </div>
+
+        <div class="products">
+          <article class="card">
+            <img src="img/esfihas.png" alt="Bandeja com diversas esfihas">
+            <h3>Esfihas</h3>
+            <p>Receitas artesanais com tempero marcante e massa macia.</p>
+            <a class="btn" href="esfiha.html">Conhecer a linha</a>
+          </article>
+
+          <article class="card">
+            <img src="img/salgados.png" alt="Seleção de mini salgadinhos">
+            <h3>Salgadinhos</h3>
+            <p>Pequenos, crocantes e recheados na medida certa.</p>
+            <a class="btn" href="salgadinhos.html">Conhecer a linha</a>
+          </article>
+
+          <article class="card">
+            <img src="img/pizzas.png" alt="Mini pizzas variadas">
+            <h3>Pizzas</h3>
+            <p>Mini pizzas com massa dourada e recheios especiais.</p>
+            <button class="btn" data-whatsapp data-message="Olá! Gostaria de saber mais sobre as mini pizzas da JP Fábrica de Salgados.">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/bolinho de kibe.png" alt="Kibes fritos">
+            <h3>Pratos árabes</h3>
+            <p>Sabor autêntico com ingredientes selecionados.</p>
+            <button class="btn" data-whatsapp data-message="Olá! Tenho interesse na linha de pratos árabes da JP Fábrica de Salgados.">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/paes.png" alt="Pães artesanais">
+            <h3>Pães</h3>
+            <p>Pães fofinhos e fresquinhos para complementar o cardápio.</p>
+            <button class="btn" data-whatsapp data-message="Olá! Gostaria de informações sobre os pães da JP Fábrica de Salgados.">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/molho.png" alt="Diversos potes de molho">
+            <h3>Molhos</h3>
+            <p>Acompanhamentos que elevam o sabor dos salgados.</p>
+            <button class="btn" data-whatsapp data-message="Olá! Gostaria de conhecer os molhos disponíveis na JP Fábrica de Salgados.">Solicitar catálogo</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sobre + contato -->
+      <section id="sobre" class="section">
+        <div class="grid-2">
+          <div>
+            <h2 class="section-title">Sobre a JP</h2>
+            <p class="section-text">Somos uma fábrica de salgados criada em 2020. Produzimos com receitas tradicionais e controle de qualidade para garantir sabor e segurança a cada mordida.</p>
+
+            <h3 class="section-subtitle">Serviços</h3>
+            <ul class="section-list">
+              <li>Encomendas para festas e eventos</li>
+              <li>Fornecimento para estabelecimentos</li>
+              <li>Venda direta para pessoas físicas</li>
+            </ul>
+          </div>
+
+          <aside class="contact-card" id="contato">
+            <h3>Peça um orçamento</h3>
+            <form id="contactForm">
+              <input type="text" id="nome" placeholder="Seu nome" required>
+              <input type="tel" id="telefone" placeholder="WhatsApp (ex: 5511999999999)" required>
+              <input type="text" id="pedido" placeholder="O que deseja (ex: 100 coxinhas)">
+              <textarea id="msg" rows="4" placeholder="Informações adicionais"></textarea>
+              <button class="btn">Enviar via WhatsApp</button>
+            </form>
+            <p class="contact-note">Você será redirecionado ao WhatsApp para fechar a encomenda.</p>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="redessociais">
+    <div class="container">
+      <h3>Redes sociais</h3>
+      <ul>
+        <li>
+          <a href="https://api.whatsapp.com/send/?phone=5541991434003&text=Ol%C3%A1" target="_blank" rel="noopener">
+            <img src="img/whatsapp.png" alt="WhatsApp da JP Fábrica de Salgados">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jp.salgados_/" target="_blank" rel="noopener">
+            <img src="img/instagram.png" alt="Instagram da JP Fábrica de Salgados">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gps">
+    <div class="gps-inner">
+      <div class="endereco">
+        <h3>Endereço</h3>
+        <div class="contact-columns">
+          <div class="contact-column">
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false"><path d="M4 9a2 2 0 0 1 2-2h1V5a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2h1a2 2 0 0 1 2 2v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9zm5-4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2H9V5zm9 4H6v9h12zM8 12h3v3H8v-3z"/></svg>
+              </span>
+              <div>
+                <strong>Fábrica</strong>
+                <span>Rua Verona, 26 - Atuba - Colombo - PR</span>
+                <span>WhatsApp: (41) 9 9143-4003</span>
+              </div>
+              <div class="map-card map-card--mobile">
+                <h4>Fábrica</h4>
+                <iframe src="https://www.google.com/maps?q=Rua%20Verona%2C%2026%20-%20Atuba%2C%20Colombo%20-%20PR&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da fábrica JP Fábrica de Salgados"></iframe>
+              </div>
+            </div>
+            <div class="map-card map-card--desktop">
+              <h4>Fábrica</h4>
+              <iframe src="https://www.google.com/maps?q=Rua%20Verona%2C%2026%20-%20Atuba%2C%20Colombo%20-%20PR&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da fábrica JP Fábrica de Salgados"></iframe>
+            </div>
+          </div>
+          <div class="contact-column">
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false"><path d="M12 2a6 6 0 0 0-6 6c0 4.418 6 14 6 14s6-9.582 6-14a6 6 0 0 0-6-6zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+              </span>
+              <div>
+                <strong>Filial</strong>
+                <span>R. Rocha Pombo, 136 - Atuba, Colombo - PR</span>
+                <span>WhatsApp: (41) 9 9948-0759</span>
+              </div>
+              <div class="map-card map-card--mobile">
+                <h4>Filial</h4>
+                <iframe src="https://www.google.com/maps?q=R.%20Rocha%20Pombo%2C%20136%20-%20Atuba%2C%20Colombo%20-%20PR&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da filial JP Fábrica de Salgados"></iframe>
+              </div>
+            </div>
+            <div class="map-card map-card--desktop">
+              <h4>Filial</h4>
+              <iframe src="https://www.google.com/maps?q=R.%20Rocha%20Pombo%2C%20136%20-%20Atuba%2C%20Colombo%20-%20PR&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da filial JP Fábrica de Salgados"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="contact-extra">
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" role="presentation" focusable="false">
+                <path d="M24 6c-7.18 0-13.25 4.55-15.33 11.22a1.6 1.6 0 0 0 2.14 1.95C13.07 17.91 16.19 17 20 17c4.29 0 7.99 1.1 11.19 2.69a1.6 1.6 0 0 0 2.14-1.95C31.25 10.55 25.18 6 24 6z"/>
+                <path d="M24 9c-8.28 0-15 6.72-15 15v3a4 4 0 0 0 4 4h2v1c0 5.52 4.48 10 10 10s10-4.48 10-10v-1h2a4 4 0 0 0 4-4v-3c0-8.28-6.72-15-15-15zm-9 19h-2a2 2 0 0 1-2-2v-3c0-7.18 5.82-13 13-13s13 5.82 13 13v3a2 2 0 0 1-2 2h-2v3c0 4.42-3.58 8-8 8h-2c-4.42 0-8-3.58-8-8z"/>
+                <circle cx="18.5" cy="24" r="2.2"/>
+                <circle cx="29.5" cy="24" r="2.2"/>
+                <path d="M18 30c1.02 2.9 3.54 4.5 6 4.5s4.98-1.6 6-4.5h-12z"/>
+                <path d="M33 26v2a5 5 0 0 1-5 5h-1v2h1c3.87 0 7-3.13 7-7v-2h-2z"/>
+              </svg>
+            </span>
+            <div>
+              <strong>SAC</strong>
+              <span>E-mail:&nbsp;j.p.ind.salgados@gmail.com</span>
+              <span>WhatsApp: (41) 9 9143-4003</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="img/logo.png" alt="JP Fábrica de Salgados" class="footer-logo">
+      <small>© 2025 JP Fábrica de Salgados • Todos os direitos reservados</small>
+      <small class="footer-credit">Desenvolvido por Mystic Designer®</small>
+    </div>
+  </footer>
+
+  <!-- Modal pedido rápido -->
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" type="button" data-close-modal aria-label="Fechar">✕</button>
+      <h3>Fazer pedido</h3>
+      <p data-modal-text>Escolha um produto para encomendar.</p>
+      <div class="hero-actions">
+        <button class="btn btn--whatsapp" data-modal-whatsapp>WhatsApp</button>
+        <button class="btn btn--ghost" data-close-modal>Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-top" type="button" data-scroll-top aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+      <path d="M12 5.5a1 1 0 0 1 .78.36l5 6a1 1 0 0 1-1.56 1.28L13 9.26V18a1 1 0 0 1-2 0V9.26l-3.22 3.88a1 1 0 0 1-1.56-1.28l5-6a1 1 0 0 1 .78-.36z" />
+    </svg>
+  </button>
+
+    <script src="scripts/main.js?v=20240524s"></script>
+</body>
+</html>
