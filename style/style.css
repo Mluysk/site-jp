@@ -1099,8 +1099,8 @@ main {
   }
 
   .hero-slide img {
-    object-fit: contain;
-    background: linear-gradient(180deg, rgba(255, 244, 230, 0.7), rgba(255, 250, 243, 0.7));
+    object-fit: cover;
+    background: none;
   }
 
   .hero-slider__control {
