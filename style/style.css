@@ -1120,7 +1120,7 @@ main {
     object-position: center;
     background: none;
     margin: 0 auto;
-    transform: scale(0.9);
+    transform: scale(0.8);
     transform-origin: center;
   }
 
