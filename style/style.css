@@ -12,6 +12,7 @@
   --max-width: 1140px;
   --radius: 18px;
   --shadow: 0 20px 45px rgba(97, 24, 28, 0.12);
+  --hero-mobile-zoom: 1.25;
   font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
 }
@@ -1124,6 +1125,8 @@ main {
     object-position: center;
     background: none;
     margin: 0 auto;
+    transform: scale(var(--hero-mobile-zoom));
+    transform-origin: center;
   }
 
   .hero-slider__control {
