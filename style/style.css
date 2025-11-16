@@ -831,6 +831,16 @@ main {
   transform: scale(1.08);
 }
 
+@media (min-width: 1024px) {
+  .redessociais {
+    padding: clamp(12px, 2.5vw, 18px) 0;
+  }
+
+  .redessociais .container {
+    min-height: clamp(80px, 10vw, 110px);
+  }
+}
+
 .gps {
   background: radial-gradient(circle at top left, rgba(64, 64, 72, 0.4), transparent 52%),
     linear-gradient(150deg, #1b1c21 0%, #25262d 46%, #16171c 100%);
