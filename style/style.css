@@ -1126,7 +1126,7 @@ main {
     object-fit: contain; /* MOSTRA A IMAGEM INTEIRA */
     object-position: center;
     background-color: #f8f8f8; /* ou transparente */
-    transform: scale(1.59); /* ZOOM suave */
+    transform: scale(1.56); /* ZOOM suave */
   }
 
   .hero-slider__control {
