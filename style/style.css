@@ -965,6 +965,22 @@ main {
   margin-top: 6px;
 }
 
+.contact-item .contact-btn {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 240px;
+  justify-content: center;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  align-self: start;
+}
+
+@media (max-width: 520px) {
+  .contact-item .contact-btn {
+    max-width: none;
+  }
+}
+
 .contact-icon {
   display: flex;
   align-items: center;
