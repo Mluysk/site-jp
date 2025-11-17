@@ -974,16 +974,18 @@ main {
 
 .contact-item .contact-btn {
   margin-top: 10px;
-  width: 100%;
-  max-width: 240px;
+  width: auto;
+  min-width: 0;
+  max-width: 220px;
   justify-content: center;
-  padding: 10px 16px;
+  padding: 10px 18px;
   font-size: 0.95rem;
   align-self: start;
 }
 
 @media (max-width: 520px) {
   .contact-item .contact-btn {
+    width: 100%;
     max-width: none;
   }
 }
