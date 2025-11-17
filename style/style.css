@@ -932,7 +932,7 @@ main {
   }
 
   .contact-extra > .contact-item {
-    width: min(92%, 420px);
+    width: min(92%, 370px);
     justify-self: center;
   }
 }
