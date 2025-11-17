@@ -915,6 +915,9 @@ main {
   margin-top: clamp(12px, 3vw, 18px);
   display: grid;
   gap: clamp(12px, 3vw, 18px);
+  width: 100%;
+  max-width: min(100%, 760px);
+  margin-inline: auto;
 }
 
 .contact-extra > .contact-item {
@@ -926,14 +929,13 @@ main {
 @media (min-width: 720px) {
   .contact-extra {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 9px;
+    column-gap: 12px;
     row-gap: clamp(12px, 3vw, 18px);
-    justify-items: center;
+    justify-items: stretch;
   }
 
   .contact-extra > .contact-item {
-    width: min(92%, 370px);
-    justify-self: center;
+    justify-self: stretch;
   }
 }
 
