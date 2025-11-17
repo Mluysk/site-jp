@@ -13,6 +13,7 @@ Site institucional estático da JP Fábrica de Salgados. O projeto inclui as pá
 .
 ├── index.html          # Página inicial com destaques e formulário de contato
 ├── esfiha.html         # Vitrine dedicada às opções de esfihas
+├── pizza.html          # Catálogo dedicado às mini pizzas artesanais
 ├── salgadinhos.html    # Vitrine dedicada aos salgadinhos
 ├── style/
 │   └── style.css       # Folha de estilos principal
@@ -25,7 +26,7 @@ Todos os botões de pedido direcionam para o WhatsApp configurado no arquivo `sc
 
 ## Controle de cache
 
-Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento e referencia os arquivos `style/style.css` e `scripts/main.js` com o sufixo de versão `?v=20240524ak`. Ao atualizar os assets, incremente esse valor (por exemplo, `?v=20240525`) em todas as páginas HTML para forçar um novo download dos arquivos.
+Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento e referencia os arquivos `style/style.css` e `scripts/main.js` com o sufixo de versão `?v=20240524al`. Ao atualizar os assets, incremente esse valor (por exemplo, `?v=20240525`) em todas as páginas HTML para forçar um novo download dos arquivos.
 
 ## Dimensões do carrossel principal
 

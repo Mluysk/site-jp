@@ -928,11 +928,12 @@ main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 9px;
     row-gap: clamp(12px, 3vw, 18px);
+    justify-items: center;
   }
 
   .contact-extra > .contact-item {
-    width: 100%;
-    justify-self: stretch;
+    width: min(92%, 420px);
+    justify-self: center;
   }
 }
 
