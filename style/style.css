@@ -916,7 +916,7 @@ main {
   display: grid;
   gap: clamp(12px, 3vw, 18px);
   width: 100%;
-  max-width: min(100%, 760px);
+  max-width: min(100%, 860px);
   margin-inline: auto;
 }
 
