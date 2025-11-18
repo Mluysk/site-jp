@@ -6,6 +6,8 @@ const modalText = modal?.querySelector('[data-modal-text]');
 const modalWhats = modal?.querySelector('[data-modal-whatsapp]');
 const scrollTopButton = document.querySelector('[data-scroll-top]');
 const heroSlider = document.querySelector('[data-hero-slider]');
+const header = document.querySelector('header');
+const navToggle = document.querySelector('[data-nav-toggle]');
 const SCROLL_TOP_THRESHOLD = 320;
 const HERO_SLIDE_INTERVAL = 5000;
 const HERO_SWIPE_THRESHOLD = 45;
@@ -257,6 +259,38 @@ function initHeroSlider() {
   startAutoAdvance();
 }
 
+function initMobileNav() {
+  if (!header || !navToggle) return;
+
+  const menuLinks = document.querySelectorAll('.primary-nav a, .secondary-nav a');
+
+  const closeMenu = () => {
+    header.classList.remove('nav-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = header.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  menuLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 820) {
+        closeMenu();
+      }
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 820) {
+      closeMenu();
+    }
+  });
+
+  closeMenu();
+}
+
 function init() {
   bindWhatsButtons();
   bindPedidoButtons();
@@ -264,6 +298,7 @@ function init() {
   bindContactForm();
   setupScrollTopButton();
   initHeroSlider();
+  initMobileNav();
 }
 
 document.addEventListener('DOMContentLoaded', init);

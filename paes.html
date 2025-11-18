@@ -8,7 +8,7 @@
   <meta http-equiv="Expires" content="0" />
   <title>Pães • JP Fábrica de Salgados</title>
   <meta name="description" content="JP Fábrica de Salgados — encomendas para festas, empresas e pessoas físicas, além de salgados frescos para revenda em lanchonetes e lojas. Qualidade, sabor e entrega rápida!" />
-    <link rel="stylesheet" href="style/style.css?v=20240524ar">
+    <link rel="stylesheet" href="style/style.css?v=20240524as">
 </head>
 <body>
   <header>
@@ -21,16 +21,30 @@
         </div>
       </div>
 
-      <nav aria-label="Menu principal">
+      <nav class="primary-nav" aria-label="Menu principal" id="primaryNav">
         <a href="index.html#sobre">Sobre</a>
         <a href="index.html#produtos">Produtos</a>
         <a href="#contato">Contato</a>
       </nav>
 
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primaryNav quickNav" aria-label="Alternar menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
       <div class="cta">
         <button class="btn" data-pedido data-message="Olá! Gostaria de fazer um pedido da linha de pães artesanais.">Fazer pedido</button>
       </div>
     </div>
+
+    <nav class="secondary-nav" aria-label="Atalhos rápidos" id="quickNav">
+      <div class="container secondary-nav__inner">
+        <a href="#vagas">Vagas de emprego</a>
+        <a href="#lojas">Encontrar loja</a>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -253,7 +267,7 @@
     </div>
   </section>
 
-  <section class="gps">
+  <section class="gps" id="lojas">
     <div class="gps-inner">
       <div class="endereco">
         <h3>Endereço</h3>
@@ -317,7 +331,7 @@
               <span>WhatsApp: (41) 9 9143-4003</span>
             </div>
           </div>
-          <div class="contact-item">
+          <div class="contact-item" id="vagas">
             <span class="contact-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48" role="presentation" focusable="false">
                 <circle cx="24" cy="15" r="6"/>
@@ -364,6 +378,6 @@
     </svg>
   </button>
 
-    <script src="scripts/main.js?v=20240524ar"></script>
+    <script src="scripts/main.js?v=20240524as"></script>
 </body>
 </html>
