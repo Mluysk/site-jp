@@ -164,13 +164,15 @@ header {
   transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-.nav-toggle span {
+.nav-toggle__icon {
+  width: 26px;
+  height: 26px;
   display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 999px;
-  background: currentColor;
-  margin: 3px 0;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
 }
 
 .nav-toggle:focus-visible,
@@ -781,15 +783,13 @@ main {
   .primary-nav {
     display: none;
     width: 100%;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
     margin-top: clamp(12px, 4vw, 18px);
   }
 
   header.nav-open .primary-nav {
-    display: flex;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+    gap: clamp(8px, 3vw, 12px);
   }
 
   .primary-nav a {
@@ -797,12 +797,16 @@ main {
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.28);
     background: rgba(255, 255, 255, 0.12);
-    padding: 10px 12px;
-    border-radius: 14px;
+    padding: 12px 14px;
+    border-radius: 16px;
     font-size: 0.92rem;
     letter-spacing: 0.35px;
     box-shadow: 0 12px 22px rgba(39, 8, 10, 0.2);
     backdrop-filter: blur(6px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
   }
 
   .nav-toggle {
@@ -826,21 +830,25 @@ main {
   }
 
   header.nav-open .secondary-nav__inner {
-    flex-direction: column;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
     padding: 12px clamp(18px, 6vw, 30px) 16px;
-    gap: 10px;
+    gap: clamp(8px, 3vw, 12px);
   }
 
   .secondary-nav a {
     width: 100%;
     text-align: center;
-    padding: 10px 12px;
-    border-radius: 14px;
+    padding: 12px 14px;
+    border-radius: 16px;
     font-size: 0.92rem;
     border: 1px solid rgba(138, 23, 32, 0.16);
     background: rgba(255, 255, 255, 0.94);
     box-shadow: 0 16px 30px rgba(31, 8, 10, 0.18);
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .header-inner .cta {
