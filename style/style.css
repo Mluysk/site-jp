@@ -190,15 +190,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: clamp(14px, 4vw, 24px);
-  padding: 10px 0;
+  gap: clamp(12px, 3.5vw, 20px);
+  padding: 6px 0;
 }
 
 .secondary-nav a {
   text-decoration: none;
   font-weight: 700;
   color: var(--red-dark);
-  padding: 8px 22px;
+  padding: 6px 18px;
   border-radius: 999px;
   border: 1px solid rgba(138, 23, 32, 0.16);
   background: rgba(255, 255, 255, 0.85);
@@ -215,9 +215,9 @@ header {
 
 @media (min-width: 821px) {
   .secondary-nav {
-    width: 85%;
-    max-width: 970px;
-    margin: 9px auto 0;
+    width: 100%;
+    max-width: none;
+    margin: 3px auto 0;
   }
 
   .secondary-nav__inner {
