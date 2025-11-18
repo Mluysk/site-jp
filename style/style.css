@@ -783,8 +783,8 @@ main {
     width: 100%;
     flex-direction: column;
     align-items: stretch;
-    gap: 10px;
-    margin-top: 18px;
+    gap: 8px;
+    margin-top: clamp(12px, 4vw, 18px);
   }
 
   header.nav-open .primary-nav {
@@ -795,11 +795,14 @@ main {
   .primary-nav a {
     width: 100%;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.15);
-    padding: 12px 14px;
-    border-radius: 16px;
-    font-size: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.12);
+    padding: 10px 12px;
+    border-radius: 14px;
+    font-size: 0.92rem;
+    letter-spacing: 0.35px;
+    box-shadow: 0 12px 22px rgba(39, 8, 10, 0.2);
+    backdrop-filter: blur(6px);
   }
 
   .nav-toggle {
@@ -825,15 +828,19 @@ main {
   header.nav-open .secondary-nav__inner {
     flex-direction: column;
     align-items: stretch;
-    padding: 14px clamp(18px, 6vw, 30px) 18px;
-    gap: 8px;
+    padding: 12px clamp(18px, 6vw, 30px) 16px;
+    gap: 10px;
   }
 
   .secondary-nav a {
     width: 100%;
     text-align: center;
-    padding: 12px 14px;
-    border-radius: 16px;
+    padding: 10px 12px;
+    border-radius: 14px;
+    font-size: 0.92rem;
+    border: 1px solid rgba(138, 23, 32, 0.16);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 16px 30px rgba(31, 8, 10, 0.18);
   }
 
   .header-inner .cta {
