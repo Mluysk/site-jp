@@ -82,6 +82,7 @@ header {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .brand {
@@ -223,6 +224,11 @@ header {
   .secondary-nav__inner {
     width: 100%;
     margin-inline: auto;
+    padding: 4px 0;
+  }
+
+  .secondary-nav a {
+    padding: 4px 16px;
   }
 }
 
@@ -764,6 +770,12 @@ main {
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
+    padding-top: clamp(20px, 6vw, 32px);
+  }
+
+  .brand {
+    width: 100%;
+    padding-right: clamp(70px, 22vw, 120px);
   }
 
   .primary-nav {
@@ -772,11 +784,12 @@ main {
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
-    margin-top: 12px;
+    margin-top: 18px;
   }
 
   header.nav-open .primary-nav {
     display: flex;
+    gap: 8px;
   }
 
   .primary-nav a {
@@ -784,11 +797,18 @@ main {
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.15);
+    padding: 12px 14px;
+    border-radius: 16px;
+    font-size: 0.95rem;
   }
 
   .nav-toggle {
     display: inline-flex;
-    margin-left: auto;
+    position: absolute;
+    top: clamp(12px, 4vw, 22px);
+    right: clamp(18px, 6vw, 32px);
+    margin: 0;
+    z-index: 2;
   }
 
   .secondary-nav {
@@ -805,13 +825,15 @@ main {
   header.nav-open .secondary-nav__inner {
     flex-direction: column;
     align-items: stretch;
-    padding: 16px clamp(18px, 6vw, 32px) 22px;
-    gap: 10px;
+    padding: 14px clamp(18px, 6vw, 30px) 18px;
+    gap: 8px;
   }
 
   .secondary-nav a {
     width: 100%;
     text-align: center;
+    padding: 12px 14px;
+    border-radius: 16px;
   }
 
   .header-inner .cta {
