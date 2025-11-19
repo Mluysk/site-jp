@@ -730,6 +730,11 @@ main {
   filter: drop-shadow(0 6px 12px rgba(88, 25, 28, 0.18));
 }
 
+.product-flags img[src*="CONGELADO"] {
+  width: 70px;
+  height: 48px;
+}
+
 .product-info {
   list-style: none;
   padding: 0;
