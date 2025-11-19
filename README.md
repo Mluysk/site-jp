@@ -29,7 +29,7 @@ Todos os botões de pedido direcionam para o WhatsApp configurado no arquivo `sc
 
 ## Controle de cache
 
-Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento, define `data-asset-version` no elemento `<html>` e referencia `style/style.css` e `scripts/main.js` com o sufixo `?v=20240524bg`. Sempre que alterar os assets, incremente esse valor (por exemplo, `?v=20240525`) em **todas** as páginas HTML e no atributo `data-asset-version`. O script principal também elimina caches navegacionais ao abrir a página novamente, garantindo que o conteúdo atualizado apareça imediatamente.
+Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento, define `data-asset-version` no elemento `<html>` e referencia `style/style.css` e `scripts/main.js` com o sufixo `?v=20240524bh`. Sempre que alterar os assets, incremente esse valor (por exemplo, `?v=20240525`) em **todas** as páginas HTML e no atributo `data-asset-version`. O script principal também elimina caches navegacionais ao abrir a página novamente, garantindo que o conteúdo atualizado apareça imediatamente.
 
 ## Segurança e conformidade
 
@@ -37,6 +37,7 @@ As páginas foram reforçadas com diretivas adicionais para eliminar alertas de 
 
 - `Content-Security-Policy` limita todos os recursos a esta origem, liberando apenas fontes do Google Fonts e iframes do Google Maps/WhatsApp.
 - `X-Content-Type-Options=nosniff`, `Permissions-Policy` (geolocation/microphone/camera desativados) e `referrer=strict-origin-when-cross-origin` evitam sniffing, restringem permissões e controlam o cabeçalho `Referer`.
+- Os padrões decorativos usados nos gradientes deixaram de ser `data:` URIs e agora vivem como SVGs estáticos em `style/`, removendo referências consideradas suspeitas pelo Google Safe Browsing.
 
 Com esses metadados em cada HTML e os links externos marcados com `rel="noopener"`, o Google deixa de classificar o site como distribuidor de downloads arriscados.
 

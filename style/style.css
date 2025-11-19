@@ -42,8 +42,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 80c17.673 0 32 14.327 32 32s14.327 32 32 32 32-14.327 32-32 14.327-32 32-32 32-14.327 32-32S145.673 16 128 16 96 1.673 96-16 81.673-48 64-48 32-33.673 32-16 17.673 0 0 0z' fill='%23f9e4cb' fill-opacity='0.28'/%3E%3C/svg%3E")
-      repeat;
+  background: url("pattern-body.svg") repeat;
   opacity: 0.35;
   pointer-events: none;
   z-index: -1;
@@ -1079,7 +1078,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ccircle cx='40' cy='40' r='3' fill='%23ffffff' fill-opacity='0.08'/%3E%3Ccircle cx='140' cy='110' r='4' fill='%23ffffff' fill-opacity='0.12'/%3E%3Ccircle cx='90' cy='160' r='2' fill='%23ffffff' fill-opacity='0.06'/%3E%3C/svg%3E") repeat;
+  background: url("pattern-gps.svg") repeat;
   opacity: 0.42;
   pointer-events: none;
 }
