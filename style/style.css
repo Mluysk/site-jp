@@ -664,6 +664,13 @@ main {
 }
 
 
+@media (max-width: 640px) {
+  .card img {
+    height: clamp(195px, 28vw, 240px);
+  }
+}
+
+
 .card {
   background: var(--card);
   border-radius: clamp(16px, 4vw, 24px);
@@ -1537,7 +1544,7 @@ main {
   }
 
   .card img {
-    height: clamp(150px, 55vw, 190px);
+    height: clamp(172px, 63vw, 220px);
   }
 }
 
