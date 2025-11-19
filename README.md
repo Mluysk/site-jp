@@ -29,7 +29,11 @@ Todos os botões de pedido direcionam para o WhatsApp configurado no arquivo `sc
 
 ## Controle de cache
 
-Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento e referencia os arquivos `style/style.css` e `scripts/main.js` com o sufixo de versão `?v=20240524bb`. Ao atualizar os assets, incremente esse valor (por exemplo, `?v=20240525`) em todas as páginas HTML para forçar um novo download dos arquivos.
+Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento, define `data-asset-version` no elemento `<html>` e referencia `style/style.css` e `scripts/main.js` com o sufixo `?v=20240524bc`. Sempre que alterar os assets, incremente esse valor (por exemplo, `?v=20240525`) em **todas** as páginas HTML e no atributo `data-asset-version`. O script principal também elimina caches navegacionais ao abrir a página novamente, garantindo que o conteúdo atualizado apareça imediatamente.
+
+## Compatibilidade
+
+O layout utiliza breakpoints extras para telas ultralargas e celulares menores que 420 px, além de respeitar a preferência de “reduzir animações” do sistema. Assim, o carrossel, os cards de produtos e os blocos de contato permanecem legíveis em qualquer dispositivo, enquanto usuários sensíveis a movimento deixam de receber animações automáticas.
 
 ## Dimensões do carrossel principal
 

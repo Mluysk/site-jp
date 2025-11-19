@@ -1489,3 +1489,81 @@ main {
     border-radius: 16px;
   }
 }
+
+@media (max-width: 420px) {
+  .brand {
+    gap: 8px;
+  }
+
+  .brand img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .brand h1 {
+    font-size: 1.1rem;
+  }
+
+  .primary-nav a,
+  .secondary-nav a {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .hero-slider__control {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .card img {
+    height: clamp(150px, 55vw, 190px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .hero-slider {
+    --hero-slide-height: clamp(380px, 38vw, 560px);
+  }
+
+  .grid-2 {
+    gap: 60px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .hero-slider__control,
+  .btn,
+  .card,
+  .secondary-nav a {
+    transition: none;
+  }
+}

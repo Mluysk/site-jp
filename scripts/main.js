@@ -1,5 +1,6 @@
 const WHATS_NUMBER = '5541991434003';
 const DEFAULT_MESSAGE = 'Olá! Gostaria de fazer uma encomenda.';
+const APP_VERSION = document.documentElement?.dataset?.assetVersion || '20240524bc';
 
 const modal = document.querySelector('[data-modal]');
 const modalText = modal?.querySelector('[data-modal-text]');
@@ -119,6 +120,39 @@ function setupScrollTopButton() {
   toggleVisibility();
 }
 
+function ensureStylesheetVersion() {
+  if (!APP_VERSION) return;
+  const links = document.querySelectorAll('link[data-cache-bust]');
+  links.forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    const url = new URL(href, window.location.href);
+    const currentVersion = url.searchParams.get('v');
+    if (currentVersion !== APP_VERSION) {
+      url.searchParams.set('v', APP_VERSION);
+      link.href = url.toString();
+    }
+  });
+}
+
+function forceFreshView() {
+  ensureStylesheetVersion();
+
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+      ensureStylesheetVersion();
+      window.location.reload();
+    }
+  });
+
+  if ('caches' in window) {
+    caches
+      .keys()
+      .then((keys) => keys.forEach((key) => caches.delete(key)))
+      .catch(() => {});
+  }
+}
+
 function initHeroSlider() {
   if (!heroSlider) return;
 
@@ -132,6 +166,25 @@ function initHeroSlider() {
   let intervalId = null;
   let touchStartX = null;
   let touchDeltaX = 0;
+  const reduceMotionQuery = typeof window.matchMedia === 'function' ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+  let allowAutoAdvance = reduceMotionQuery ? !reduceMotionQuery.matches : true;
+
+  const handleMotionPreference = (event) => {
+    allowAutoAdvance = !event.matches;
+    if (!allowAutoAdvance) {
+      stopAutoAdvance();
+    } else {
+      startAutoAdvance();
+    }
+  };
+
+  if (reduceMotionQuery) {
+    if (typeof reduceMotionQuery.addEventListener === 'function') {
+      reduceMotionQuery.addEventListener('change', handleMotionPreference);
+    } else if (typeof reduceMotionQuery.addListener === 'function') {
+      reduceMotionQuery.addListener(handleMotionPreference);
+    }
+  }
 
   if (currentIndex < 0) {
     currentIndex = 0;
@@ -196,7 +249,7 @@ function initHeroSlider() {
   }
 
   function startAutoAdvance() {
-    if (slides.length <= 1) return;
+    if (slides.length <= 1 || !allowAutoAdvance) return;
     stopAutoAdvance();
     intervalId = setInterval(showNextSlide, HERO_SLIDE_INTERVAL);
   }
@@ -292,6 +345,7 @@ function initMobileNav() {
 }
 
 function init() {
+  forceFreshView();
   bindWhatsButtons();
   bindPedidoButtons();
   bindModalControls();
