@@ -253,6 +253,54 @@ header {
   fill: currentColor;
 }
 
+.secondary-nav__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--red-dark);
+  font-weight: 700;
+}
+
+.secondary-nav__divider {
+  color: rgba(138, 23, 32, 0.45);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+}
+
+.secondary-nav__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.secondary-nav__social-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red-dark);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(138, 23, 32, 0.16);
+  box-shadow: 0 10px 20px rgba(71, 21, 24, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.secondary-nav__social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.secondary-nav__social-link:hover,
+.secondary-nav__social-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(138, 23, 32, 0.35);
+  box-shadow: 0 16px 28px rgba(71, 21, 24, 0.2);
+}
+
 @media (min-width: 821px) {
   .secondary-nav {
     width: 100%;
@@ -884,6 +932,22 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
     padding: 12px clamp(18px, 6vw, 30px) 16px;
     gap: clamp(8px, 3vw, 12px);
+  }
+
+  header.nav-open .secondary-nav__meta {
+    grid-column: 1 / -1;
+    justify-content: center;
+    gap: clamp(10px, 4vw, 16px);
+  }
+
+  header.nav-open .secondary-nav__divider {
+    font-size: 18px;
+  }
+
+  header.nav-open .secondary-nav__social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
   }
 
   .secondary-nav a {
