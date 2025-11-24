@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="pt-BR" data-asset-version="20240524br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; frame-src https://www.google.com https://api.whatsapp.com https://wa.me; form-action 'self' https://api.whatsapp.com https://wa.me; base-uri 'self'; upgrade-insecure-requests" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Molhos • JP Fábrica de Salgados</title>
+  <meta name="description" content="JP Fábrica de Salgados — encomendas para festas, empresas e pessoas físicas, além de salgados frescos para revenda em lanchonetes e lojas. Qualidade, sabor e entrega rápida!" />
+    <link rel="stylesheet" href="style/style.css?v=20240524br" data-cache-bust>
+  </head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="img/logo.png" alt="JP Fábrica de Salgados" id="logo">
+        <div>
+          <h1>JP Fábrica de Salgados</h1>
+          <small>Tradição e sabor desde 2020</small>
+        </div>
+      </div>
+
+      <nav class="primary-nav" aria-label="Menu principal" id="primaryNav">
+        <a href="index.html#sobre">
+          <span class="nav-link__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+              <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 5.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zm1.75 10h-3.5v-1.5h1v-3h-1v-1.5h2.5a1 1 0 0 1 1 1v3.5h1v1.5z"/>
+            </svg>
+          </span>
+          <span>Sobre</span>
+        </a>
+        <a href="index.html#produtos">
+          <span class="nav-link__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+              <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/>
+            </svg>
+          </span>
+          <span>Produtos</span>
+        </a>
+        <a href="#contato">
+          <span class="nav-link__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+              <path d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H9.6L6 18.5V15H7a3 3 0 0 1-3-3z"/>
+            </svg>
+          </span>
+          <span>Contato</span>
+        </a>
+      </nav>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primaryNav quickNav" aria-label="Alternar menu">
+        <svg class="nav-toggle__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <div class="cta">
+        <button class="btn" data-pedido data-message="Olá! Gostaria de fazer um pedido da linha de molhos.">Fazer pedido</button>
+      </div>
+    </div>
+
+          <nav class="secondary-nav" aria-label="Atalhos rápidos" id="quickNav">
+        <div class="container secondary-nav__inner">
+          <div class="secondary-nav__meta">
+            <a href="#vagas">
+              <span class="secondary-nav__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path d="M9 6V5a3 3 0 0 1 6 0v1h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3zm2-1a1 1 0 0 1 2 0v1h-2V5zm-5 4v7h12V9H6z"/>
+                </svg>
+              </span>
+              <span>Vagas de emprego</span>
+            </a>
+            <a href="#lojas">
+              <span class="secondary-nav__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path d="M12 2a7 7 0 0 0-7 7c0 4.75 7 13 7 13s7-8.25 7-13a7 7 0 0 0-7-7zm0 9.25a2.25 2.25 0 1 1 0-4.5 2.25 2.25 0 0 1 0 4.5z"/>
+                </svg>
+              </span>
+              <span>Encontrar loja</span>
+            </a>
+            <span class="secondary-nav__divider" aria-hidden="true">|</span>
+            <div class="secondary-nav__social" aria-label="Redes sociais">
+              <a class="secondary-nav__social-link" href="https://api.whatsapp.com/send/?phone=5541991434003&text=Ol%C3%A1" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2a10 10 0 0 0-8.94 14.5L2 22l5.4-1.88A10 10 0 1 0 12 2zm5.2 14.3c-.22.62-1.28 1.18-1.8 1.25-.46.06-1.05.09-1.69-.11-2.99-.95-4.94-3.48-5.09-3.66-.15-.18-1.21-1.61-1.21-3.07s.77-2.18 1.05-2.48c.27-.3.59-.37.79-.37.2 0 .39 0 .56.01.18.01.42-.07.66.5.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.18.3.78 1.28 1.68 2.07 1.15 1.02 2.11 1.34 2.41 1.49.3.15.47.12.64-.07.17-.2.74-.86.94-1.15.2-.3.4-.24.67-.14.27.1 1.72.81 2.02.96.3.15.5.22.56.34.07.12.07.72-.15 1.34z"/>
+                </svg>
+                <span class="sr-only">WhatsApp</span>
+              </a>
+              <a class="secondary-nav__social-link" href="https://www.instagram.com/jp.salgados_/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm5 2.75A4.25 4.25 0 1 1 7.75 12 4.25 4.25 0 0 1 12 7.75zm0 2a2.25 2.25 0 1 0 2.25 2.25A2.25 2.25 0 0 0 12 9.75zm4.5-3.5a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25z"/>
+                </svg>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <main>
+    <div class="container">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-card">
+          <img src="img/molhos-hero.png" alt="Molhos artesanais e acompanhamentos" class="hero-media">
+          <div class="hero-content">
+            <h2>Molhos especiais para valorizar seus salgados</h2>
+            <p>Receitas cremosas, picantes e defumadas prontas para servir em eventos, buffets e lanchonetes.</p>
+            <div class="hero-actions">
+              <a class="btn btn--ghost" href="index.html">← Voltar</a>
+              <button class="btn btn--whatsapp" data-whatsapp data-message="Olá! Gostaria de encomendar os molhos artesanais da JP Fábrica de Salgados.">Solicitar catálogo</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Produtos -->
+      <section id="produtos" class="section">
+        <div class="section-header">
+          <h2>Molhos e acompanhamentos premium</h2>
+          <p>Crie combinações com sabores suaves, picantes e defumados para cada tipo de salgado.</p>
+        </div>
+
+        <div class="products">
+          <article class="card">
+            <img src="img/molho-pimenta.png" alt="Molho especial de pimenta">
+            <h3>Molho especial de pimenta</h3>
+            <ul class="product-info">
+              <li><strong>Volume:</strong> 250 g</li>
+              <li><strong>Sabor:</strong> Blend de pimentas dedo-de-moça e malagueta com alho</li>
+              <li><strong>Picância:</strong> Médio</li>
+              <li><strong>Kit:</strong> 12 potes • 3 kg padrão</li>
+            </ul>
+            <div class="product-flags">
+              <img src="img/CONGELADO.png" alt="Armazenar refrigerado">
+              <img src="img/cru.png" alt="Pronto para servir">
+              <img src="img/frito.png" alt="Acompanha frituras">
+              <img src="img/assado.png" alt="Vai bem com assados">
+            </div>
+            <button class="btn" data-whatsapp data-message="Olá! Envie o catálogo do molho especial de pimenta.">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/molho-maionese.png" alt="Maionese temperada de ervas">
+            <h3>Maionese temperada de ervas</h3>
+            <ul class="product-info">
+              <li><strong>Volume:</strong> 1 kg</li>
+              <li><strong>Sabor:</strong> Maionese cremosa com salsinha, cebolinha e limão</li>
+              <li><strong>Conservação:</strong> 30 dias refrigerado</li>
+              <li><strong>Kit:</strong> 4 bisnagas • 4 kg padrão</li>
+            </ul>
+            <div class="product-flags">
+              <img src="img/CONGELADO.png" alt="Armazenar refrigerado">
+              <img src="img/cru.png" alt="Pronto para servir">
+              <img src="img/frito.png" alt="Acompanha frituras">
+              <img src="img/assado.png" alt="Vai bem com assados">
+            </div>
+            <button class="btn" data-whatsapp data-message="Olá! Gostaria do catálogo da maionese temperada de ervas.">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/molho-barbecue.png" alt="Molho barbecue artesanal">
+            <h3>Molho barbecue artesanal</h3>
+            <ul class="product-info">
+              <li><strong>Volume:</strong> 750 g</li>
+              <li><strong>Sabor:</strong> Tomate, melaço e fumaça líquida equilibrada</li>
+              <li><strong>Conservação:</strong> 45 dias refrigerado</li>
+              <li><strong>Kit:</strong> 6 frascos • 4,5 kg padrão</li>
+            </ul>
+            <div class="product-flags">
+              <img src="img/CONGELADO.png" alt="Armazenar refrigerado">
+              <img src="img/cru.png" alt="Pronto para servir">
+              <img src="img/frito.png" alt="Acompanha frituras">
+              <img src="img/assado.png" alt="Vai bem com assados">
+            </div>
+            <button class="btn" data-whatsapp data-message="Olá! Preciso do catálogo do molho barbecue artesanal.">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/molho-alho.png" alt="Creme de alho defumado">
+            <h3>Creme de alho defumado</h3>
+            <ul class="product-info">
+              <li><strong>Volume:</strong> 250 g</li>
+              <li><strong>Sabor:</strong> Alho assado, limão siciliano e ervas frescas</li>
+              <li><strong>Conservação:</strong> 25 dias refrigerado</li>
+              <li><strong>Kit:</strong> 12 potes • 3 kg padrão</li>
+            </ul>
+            <div class="product-flags">
+              <img src="img/CONGELADO.png" alt="Armazenar refrigerado">
+              <img src="img/cru.png" alt="Pronto para servir">
+              <img src="img/frito.png" alt="Acompanha frituras">
+              <img src="img/assado.png" alt="Vai bem com assados">
+            </div>
+            <button class="btn" data-whatsapp data-message="Olá! Pode enviar o catálogo do creme de alho defumado?">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/molho-chimi.png" alt="Molho chimichurri fresco">
+            <h3>Molho chimichurri fresco</h3>
+            <ul class="product-info">
+              <li><strong>Volume:</strong> 500 g</li>
+              <li><strong>Sabor:</strong> Salsinha, orégano, vinagre de vinho e pimenta calabresa</li>
+              <li><strong>Conservação:</strong> 30 dias refrigerado</li>
+              <li><strong>Kit:</strong> 8 potes • 4 kg padrão</li>
+            </ul>
+            <div class="product-flags">
+              <img src="img/CONGELADO.png" alt="Armazenar refrigerado">
+              <img src="img/cru.png" alt="Pronto para servir">
+              <img src="img/frito.png" alt="Acompanha frituras">
+              <img src="img/assado.png" alt="Vai bem com assados">
+            </div>
+            <button class="btn" data-whatsapp data-message="Olá! Gostaria do catálogo do molho chimichurri fresco.">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/molho-cheddar.png" alt="Creme de cheddar com bacon">
+            <h3>Creme de cheddar com bacon</h3>
+            <ul class="product-info">
+              <li><strong>Volume:</strong> 1 kg</li>
+              <li><strong>Sabor:</strong> Mistura de queijos, bacon crocante e toque de páprica</li>
+              <li><strong>Conservação:</strong> 20 dias refrigerado</li>
+              <li><strong>Kit:</strong> 4 bisnagas • 4 kg padrão</li>
+            </ul>
+            <div class="product-flags">
+              <img src="img/CONGELADO.png" alt="Armazenar refrigerado">
+              <img src="img/cru.png" alt="Pronto para servir">
+              <img src="img/frito.png" alt="Acompanha frituras">
+              <img src="img/assado.png" alt="Vai bem com assados">
+            </div>
+            <button class="btn" data-whatsapp data-message="Olá! Envie o catálogo do creme de cheddar com bacon.">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/geleia-pimenta.png" alt="Geleia de pimenta agridoce">
+            <h3>Geleia de pimenta agridoce</h3>
+            <ul class="product-info">
+              <li><strong>Volume:</strong> 240 g</li>
+              <li><strong>Sabor:</strong> Pimenta dedo-de-moça, maçã verde e especiarias</li>
+              <li><strong>Picância:</strong> Suave</li>
+              <li><strong>Kit:</strong> 12 potes • 2,9 kg padrão</li>
+            </ul>
+            <div class="product-flags">
+              <img src="img/CONGELADO.png" alt="Armazenar refrigerado">
+              <img src="img/cru.png" alt="Pronto para servir">
+              <img src="img/frito.png" alt="Acompanha frituras">
+              <img src="img/assado.png" alt="Vai bem com assados">
+            </div>
+            <button class="btn" data-whatsapp data-message="Olá! Preciso do catálogo da geleia de pimenta agridoce.">Solicitar catálogo</button>
+          </article>
+
+          <article class="card">
+            <img src="img/molho-mostarda.png" alt="Molho de mostarda e mel">
+            <h3>Molho de mostarda e mel</h3>
+            <ul class="product-info">
+              <li><strong>Volume:</strong> 750 g</li>
+              <li><strong>Sabor:</strong> Mostarda dijon, mel silvestre e toque cítrico</li>
+              <li><strong>Conservação:</strong> 40 dias refrigerado</li>
+              <li><strong>Kit:</strong> 6 frascos • 4,5 kg padrão</li>
+            </ul>
+            <div class="product-flags">
+              <img src="img/CONGELADO.png" alt="Armazenar refrigerado">
+              <img src="img/cru.png" alt="Pronto para servir">
+              <img src="img/frito.png" alt="Acompanha frituras">
+              <img src="img/assado.png" alt="Vai bem com assados">
+            </div>
+            <button class="btn" data-whatsapp data-message="Olá! Pode enviar o catálogo do molho de mostarda e mel?">Solicitar catálogo</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Sobre + contato -->
+      <section id="sobre" class="section">
+        <div class="grid-2">
+          <div>
+            <h2 class="section-title">Personalize seu kit</h2>
+            <p class="section-text">Trabalhamos com produção diária e controle rigoroso de qualidade para manter o padrão JP em todos os salgados.</p>
+
+            <h3 class="section-subtitle">Por que escolher a JP?</h3>
+            <ul class="section-list">
+              <li>Cardápio variado para atender diferentes paladares</li>
+              <li>Opções congeladas para fritar ou assar no momento</li>
+              <li>Suporte na definição das quantidades ideais</li>
+            </ul>
+          </div>
+
+          <aside class="contact-card" id="contato">
+            <h3>Solicite uma cotação</h3>
+            <form id="contactForm">
+              <input type="text" id="nome" placeholder="Seu nome" required>
+              <input type="tel" id="telefone" placeholder="WhatsApp (ex: 5511999999999)" required>
+              <input type="text" id="pedido" placeholder="Sabores ou quantidades desejadas">
+              <textarea id="msg" rows="4" placeholder="Data do evento ou observações"></textarea>
+              <button class="btn">Enviar via WhatsApp</button>
+            </form>
+            <p class="contact-note">Responderemos pelo WhatsApp com sugestões de combinação.</p>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section class="redessociais">
+    <div class="container">
+      <h3>Redes sociais</h3>
+      <ul>
+        <li>
+          <a href="https://api.whatsapp.com/send/?phone=5541991434003&text=Ol%C3%A1" target="_blank" rel="noopener">
+            <img src="img/whatsapp.png" alt="WhatsApp da JP Fábrica de Salgados">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jp.salgados_/" target="_blank" rel="noopener">
+            <img src="img/instagram.png" alt="Instagram da JP Fábrica de Salgados">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gps" id="lojas">
+    <div class="gps-inner">
+      <div class="endereco">
+        <h3>Endereço</h3>
+        <div class="contact-columns">
+          <div class="contact-column">
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false"><path d="M4 9a2 2 0 0 1 2-2h1V5a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2h1a2 2 0 0 1 2 2v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9zm5-4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2H9V5zm9 4H6v9h12zM8 12h3v3H8v-3z"/></svg>
+              </span>
+              <div>
+                <strong>Fábrica</strong>
+                <span>Rua Verona, 26 - Atuba - Colombo - PR</span>
+                <span>WhatsApp: (41) 9 9143-4003</span>
+              </div>
+              <div class="map-card map-card--mobile">
+                <h4>Fábrica</h4>
+                <iframe src="https://www.google.com/maps?q=Rua%20Verona%2C%2026%20-%20Atuba%2C%20Colombo%20-%20PR&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da fábrica JP Fábrica de Salgados"></iframe>
+              </div>
+            </div>
+            <div class="map-card map-card--desktop">
+              <h4>Fábrica</h4>
+              <iframe src="https://www.google.com/maps?q=Rua%20Verona%2C%2026%20-%20Atuba%2C%20Colombo%20-%20PR&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da fábrica JP Fábrica de Salgados"></iframe>
+          </div>
+          <div class="contact-column">
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation" focusable="false"><path d="M12 2a6 6 0 0 0-6 6c0 4.418 6 14 6 14s6-9.582 6-14a6 6 0 0 0-6-6zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+              </span>
+              <div>
+                <strong>Filial</strong>
+                <span>R. Rocha Pombo, 136 - Atuba, Colombo - PR</span>
+                <span>WhatsApp: (41) 9 9948-0759</span>
+              </div>
+              <div class="map-card map-card--mobile">
+                <h4>Filial</h4>
+                <iframe src="https://www.google.com/maps?q=R.%20Rocha%20Pombo%2C%20136%20-%20Atuba%2C%20Colombo%20-%20PR&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da filial JP Fábrica de Salgados"></iframe>
+              </div>
+            </div>
+            <div class="map-card map-card--desktop">
+              <h4>Filial</h4>
+              <iframe src="https://www.google.com/maps?q=R.%20Rocha%20Pombo%2C%20136%20-%20Atuba%2C%20Colombo%20-%20PR&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da filial JP Fábrica de Salgados"></iframe>
+          </div>
+        </div>
+        <div class="contact-extra">
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" role="presentation" focusable="false">
+                <path d="M24 6c-7.18 0-13.25 4.55-15.33 11.22a1.6 1.6 0 0 0 2.14 1.95C13.07 17.91 16.19 17 20 17c4.29 0 7.99 1.1 11.19 2.69a1.6 1.6 0 0 0 2.14-1.95C31.25 10.55 25.18 6 24 6z"/>
+                <path d="M24 9c-8.28 0-15 6.72-15 15v3a4 4 0 0 0 4 4h2v1c0 5.52 4.48 10 10 10s10-4.48 10-10v-1h2a4 4 0 0 0 4-4v-3c0-8.28-6.72-15-15-15zm-9 19h-2a2 2 0 0 1-2-2v-3c0-7.18 5.82-13 13-13s13 5.82 13 13v3a2 2 0 0 1-2 2h-2v3c0 4.42-3.58 8-8 8h-2c-4.42 0-8-3.58-8-8z"/>
+                <circle cx="18.5" cy="24" r="2.2"/>
+                <circle cx="29.5" cy="24" r="2.2"/>
+                <path d="M18 30c1.02 2.9 3.54 4.5 6 4.5s4.98-1.6 6-4.5h-12z"/>
+                <path d="M33 26v2a5 5 0 0 1-5 5h-1v2h1c3.87 0 7-3.13 7-7v-2h-2z"/>
+              </svg>
+            </span>
+            <div>
+              <strong>SAC</strong>
+              <span>E-mail:&nbsp;j.p.ind.salgados@gmail.com</span>
+              <span>WhatsApp: (41) 9 9143-4003</span>
+            </div>
+          </div>
+          <div class="contact-item" id="vagas">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" role="presentation" focusable="false">
+                <circle cx="24" cy="15" r="6"/>
+                <path d="M12 38v-1.5C12 30.6 17.6 25 24.5 25h-.5c6.9 0 12.5 5.6 12.5 11.5V38z"/>
+                <path d="M16 12h16v4H16z"/>
+                <path d="M28 6h-8a2 2 0 0 0-2 2v2h12V8a2 2 0 0 0-2-2z"/>
+              </svg>
+            </span>
+            <div>
+              <strong>Faça parte da equipe</strong>
+              <span>Mande o currículo e venha crescer com a JP.</span>
+              <button class="btn btn--whatsapp contact-btn" type="button" data-whatsapp data-message="Olá! Gostaria de enviar meu currículo para a JP Fábrica de Salgados.">Enviar currículo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="img/logo.png" alt="JP Fábrica de Salgados" class="footer-logo">
+      <small>© 2025 JP Fábrica de Salgados • Todos os direitos reservados</small>
+      <small class="footer-credit">Desenvolvido por Mystic Designer®</small>
+    </div>
+  </footer>
+
+  <!-- Modal pedido rápido -->
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" type="button" data-close-modal aria-label="Fechar">✕</button>
+      <h3>Fazer pedido</h3>
+      <p data-modal-text>Escolha um produto para encomendar.</p>
+      <div class="hero-actions">
+        <button class="btn btn--whatsapp" data-modal-whatsapp>WhatsApp</button>
+        <button class="btn btn--ghost" data-close-modal>Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-top" type="button" data-scroll-top aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+      <path d="M12 5.5a1 1 0 0 1 .78.36l5 6a1 1 0 0 1-1.56 1.28L13 9.26V18a1 1 0 0 1-2 0V9.26l-3.22 3.88a1 1 0 0 1-1.56-1.28l5-6a1 1 0 0 1 .78-.36z" />
+    </svg>
+  </button>
+
+    <script src="scripts/main.js?v=20240524br" defer></script>
+  </body>
+</html>
