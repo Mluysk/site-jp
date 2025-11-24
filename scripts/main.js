@@ -1,6 +1,6 @@
 const WHATS_NUMBER = '5541991434003';
 const DEFAULT_MESSAGE = 'Olá! Gostaria de fazer uma encomenda.';
-const APP_VERSION = document.documentElement?.dataset?.assetVersion || '20240524bt';
+const APP_VERSION = document.documentElement?.dataset?.assetVersion || '20240524bu';
 
 const modal = document.querySelector('[data-modal]');
 const modalText = modal?.querySelector('[data-modal-text]');
