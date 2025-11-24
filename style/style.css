@@ -275,9 +275,9 @@ header {
 }
 
 .secondary-nav__social-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -289,8 +289,8 @@ header {
 }
 
 .secondary-nav__social-link svg {
-  width: 92%;
-  height: 92%;
+  width: 98%;
+  height: 98%;
   fill: currentColor;
 }
 
@@ -945,9 +945,9 @@ main {
   }
 
   header.nav-open .secondary-nav__social-link {
-    width: 42px;
-    height: 42px;
-    border-radius: 15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 14px;
   }
 
   .secondary-nav a {
