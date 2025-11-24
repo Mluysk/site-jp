@@ -29,7 +29,7 @@ Todos os botões de pedido direcionam para o WhatsApp configurado no arquivo `sc
 
 ## Controle de cache
 
-Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento, define `data-asset-version` no elemento `<html>` e referencia `style/style.css` e `scripts/main.js` com o sufixo `?v=20240524bk`. Sempre que alterar os assets, incremente esse valor (por exemplo, `?v=20240525`) em **todas** as páginas HTML e no atributo `data-asset-version`. O script principal também elimina caches navegacionais ao abrir a página novamente, garantindo que o conteúdo atualizado apareça imediatamente.
+Para evitar que celulares e navegadores de desktop exibam versões antigas do site, cada página inclui cabeçalhos `meta` com diretivas de não armazenamento, define `data-asset-version` no elemento `<html>` e referencia `style/style.css` e `scripts/main.js` com o sufixo `?v=20240524bl`. Sempre que alterar os assets, incremente esse valor (por exemplo, `?v=20240525`) em **todas** as páginas HTML e no atributo `data-asset-version`. O script principal também elimina caches navegacionais ao abrir a página novamente, garantindo que o conteúdo atualizado apareça imediatamente.
 
 ## Segurança e conformidade
 
